@@ -229,14 +229,6 @@ Save it as examples/custom.c and compile:
 
 Expected result: **32**. A custom module can depend on other freestanding modules using ordinary -L/-l link options; make sure those dependencies are present when ELFLab loads it.
 
-## GitHub upload
-
-Extract the ZIP and upload the **contents of elf-dynamic-loader**, so README.md and Makefile are at the repository root. Keep src, include, examples, tests, docs, configuration, and license files.
-
-Do not upload build or build-sanitize. These contain generated executables, object files, and fixture binaries, and are excluded by .gitignore. The examples folder contains the source required to rebuild those fixtures, so keep it.
-
-The .vscode files contain shared Linux/WSL settings and are safe to include. The GitHub Actions workflow runs compilation, tests, and sanitizers on Ubuntu after a push. No account secrets or API keys are needed.
-
 ## Troubleshooting
 
 | Problem | Fix |
